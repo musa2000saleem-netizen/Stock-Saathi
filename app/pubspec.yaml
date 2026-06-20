@@ -1,0 +1,14 @@
+name: stock_saathi
+description: Har Dukaan Ka Digital Saathi
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  sqflite: ^2.3.3
+  path: ^1.9.0
