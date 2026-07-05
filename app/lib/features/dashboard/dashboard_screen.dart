@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../inventory/inventory_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
 const DashboardScreen({super.key});
@@ -33,7 +34,14 @@ child: const Text("💰 Bikri Record Karo"),
 ),
 const SizedBox(height: 12),
 ElevatedButton(
-onPressed: () {},
+onPressed: () {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => const InventoryScreen(),
+    ),
+  );
+},
 child: const Text("📦 Stock Dekho"),
 ),
 const SizedBox(height: 12),
